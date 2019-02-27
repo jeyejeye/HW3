@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+    <title>Common test</title>
+</head>
+<body>
+    <div id="mocha"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
+    <script>
+        mocha.setup('bdd');
+        var assert = chai.assert;
+    </script>
+    <script src="../../HW2/src/interfaces/ilist0.js"></script>
+    <script src="../../HW2/src/interfaces/ilist1.js"></script>
+    <script src="../../HW2/src/classes/alist0.js"></script>
+    <script src="../../HW2/src/classes/llist0.js"></script>
+    <script src="../../HW2/src/classes/alist1.js"></script>
+    <script src="../../HW2/src/classes/llist1.js"></script>
+    <script src="../src/b-tree.js"></script>
+
+    <script src="./src/b-tree.test.js"></script>
+
+    <script>
+        mocha.run();
+    </script>
+</body>
+
+</html>
