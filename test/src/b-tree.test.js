@@ -166,7 +166,19 @@ describe('Testing binary sorted tree "BSTree()"', function () {
 
             assert.equal(expected, actual);
 		});
-		
+
+		it(`should return entry with value=16 for deleting 15`, function () {
+		    bstree.insert(16);
+    		bstree.insert(20);
+	    	bstree.insert(19);
+		    bstree.insert(23);
+	    	bstree.insert(18);
+			const expected = 16;
+			const actual = bstree.remove(15);
+
+            assert.equal(expected, actual.value);
+		});
+		/*  */
 	});
 	
 	describe('testing "empty" method', function () {
