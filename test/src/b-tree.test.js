@@ -178,6 +178,27 @@ describe('Testing binary sorted tree "BSTree()"', function () {
 
             assert.equal(expected, actual.value);
 		});
+
+		it(`should return entry with value=78 for deleting 57`, function () {
+            const expected = 78;
+            const actual = bstree.remove(57);
+
+            assert.equal(expected, actual.value);
+        });
+
+        it(`should return entry with value=76 for deleting 78`, function () {
+            const expected = 76;
+            const actual = bstree.remove(78);
+
+            assert.equal(expected, actual.value);
+        });
+
+        it(`should return entry with value=39 for deleting 50`, function () {
+            const expected = 39;
+            const actual = bstree.remove(50);
+
+            assert.equal(expected, actual.value);
+        });
 		/*  */
 	});
 	

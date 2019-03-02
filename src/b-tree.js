@@ -43,8 +43,10 @@ BSTree.prototype.remove = function (value) {
 			return null;
 		} else {
 			const mockRoot = new Entry();
-			mockRoot.left = this.root;
+			mockRoot.right = this.root;
+			this.root.parent = mockRoot;
 			this.root = this.root.remove();
+			this.root.parent = null;
 			return this.root;
 		}		
 	}
